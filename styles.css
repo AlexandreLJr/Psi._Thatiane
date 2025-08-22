@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D6EBDD; /* Cor de fundo */
+    font-family: 'Crimson Text', serif; /* Fonte para textos */
+    color: #000000; /* Cor do texto */
+    font-size: 26px;
+}
+
+.logo-img {
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que as margens funcionem corretamente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 180px; /* Ajuste conforme necessário */
+    background-color: #F5F2EB; /* Mantém a aparência */
+    width: 100%;
+   
+}
+
+header {
+    position: fixed;
+    top: 0px; /* Ajuste para não colidir com a logo */
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 5px 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'Cinzel', serif; 
+    color: #000000;
+}
+
+nav a {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Seções para dar espaçamento padrão */
+section {
+    padding: 60px 20px;
+}
