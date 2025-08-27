@@ -33,7 +33,7 @@ header {
 }
 
 /* Títulos */
-h1, h2, h3, h4, h5, h6 {
+h1, h2{
     font-family: 'Cinzel', serif; 
     color: #000000;
 }
@@ -93,7 +93,8 @@ img {
   border-radius: 8px;
   background: #385B4F;
   color: white;
-  font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
+  font-size: 16px;
+  font-family: 'Cinzel', serif; /* ou 'Crimson Text' */            /* Ajuste o tamanho da fonte aqui */
   letter-spacing: .08em;
   text-transform: uppercase;
   text-decoration: none;
@@ -138,6 +139,52 @@ img {
   .disposição{
     font-size: 35px;
   }
+
+  .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* para responsividade */
+}
+
+.feature-card {
+  width: 23%; /* 4 cards lado a lado (23% + gaps) */
+  background: #4d816e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.feature-card h2 {
+  font-family: 'Crimson Text', serif; 
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  background: #619e87;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.feature-card:hover p {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+
 
 
 @media screen and (min-width: 992px) {
