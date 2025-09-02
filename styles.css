@@ -345,32 +345,24 @@ scroll-margin-top: 100px;
 margin: 0 auto;
 }
 
-img{
-margin-top: 50px;
+.txt-inicio{
+  margin-right: 30px;
 }
 
 .separator {
 width: 90%;
 }
 
-#inicio .flex {
-align-items: center; /* centraliza tudo */
-}
-
-#inicio .txt-inicio {
-order: 1;
-}
-
-#inicio .img {
-order: 2;
-}
-
-#inicio .btn {
-order: 3;
-}
-
 .disposição{
 font-size: 25px;
+}
+
+.demandas{
+  margin-left: -10px;
+}
+
+.modalidades{
+  margin-left:-13px;
 }
 
 #atendimento h1 {
