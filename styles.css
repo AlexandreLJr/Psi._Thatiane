@@ -334,19 +334,19 @@ flex-direction: column;
 display: none;
 }
 
+header{
+top:-1px;
+}
+
 .logo-img {
 margin-left: 80px;   /* Centraliza horizontalmente */
-text-align: center;
+text-align: center; 
 }
 
 section {
 padding: 60px 20px;
 scroll-margin-top: 100px;
 margin: 0 auto;
-}
-
-.txt-inicio{
-  margin-right: 30px;
 }
 
 .separator {
@@ -358,11 +358,11 @@ font-size: 25px;
 }
 
 .demandas{
-  margin-left: -10px;
+margin-left: -10px;
 }
 
 .modalidades{
-  margin-left:-13px;
+margin-left:-13px;
 }
 
 #atendimento h1 {
@@ -374,14 +374,14 @@ text-align: center;
 }
 
 .cards-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(1550px, 1fr));
-margin: 0 auto;
+display: flex;
+flex-wrap: wrap; /* permite quebrar linha */
+justify-content: center; /* centraliza horizontalmente */
 gap: 1.5rem;
-padding: 1rem;
- /* centraliza na horizontal */
-align-content: center;   /* centraliza na vertical dentro da grid */
-      
+}
+
+.feature-card {
+width: 100%; /* 4 cards lado a lado (23% + gaps) */
 }
 
 .container .row {
@@ -399,8 +399,8 @@ order: 1;
 }
 
 #atendimento .map-container {
-  margin-top:-50px;
-  order: 2;
+margin-top:-50px;
+order: 2;
 }
 }
 
@@ -412,7 +412,7 @@ column-gap: 90px;   /* espaço entre colunas */
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*TABLETS*/
 body {
 margin: 0;
 padding: 0;
@@ -438,21 +438,75 @@ display: block !important; /* ou flex, dependendo do layout */
 font-size: 21px;
 }
 
+header{
+top:-1px;
+}
+
 .logo-img {
-margin-left: 260px; /* Espaço à direita */
+margin-left: 250px; /* Espaço à direita */
 margin-top: 15px;
+max-width: 220px; /* Ajuste conforme necessário */
+width: 220px;
 }
 
 .menu-icon {
-  top: 22px;       /* Distância do topo */
-  left: 20px;      /* Distância da esquerda */
-  font-size: 45px;
-  cursor: pointer;
-  margin: 0;       /* Remove margens que empurram */
+top: 22px;       /* Distância do topo */
+left: 20px;      /* Distância da esquerda */
+font-size: 45px;
+cursor: pointer;
+margin: 0;       /* Remove margens que empurram */
+}
+
+section {
+padding: 100px 50px;
+scroll-margin-top: 100px;
+margin: 0 auto;
 }
 
 .separator {
 width: 90%;
 }
 
+.txt-inicio{
+margin-left: -1000px;
+}
+
+.demandas{
+margin-left: -9px;
+}
+
+.modalidades{
+margin-left:-11px;
+}
+
+.cards-container {
+display: flex;
+flex-wrap: wrap; /* permite quebrar linha */
+justify-content: center; /* centraliza horizontalmente */
+gap: 1.5rem;
+}
+
+.feature-card {
+width: 100%; /* 4 cards lado a lado (23% + gaps) */
+}
+
+.feature-card .subtitulo{
+font-size: 22px;
+}
+
+/* Inverte a ordem: texto em cima, mapa no meio, botão embaixo */
+#atendimento .consultorio {
+margin-top: 60px;
+order: 1;
+}
+
+#atendimento .map-container {
+margin-top:-20px;
+order: 2;
+}
+
+.btn{
+padding: 32px 120px;  
+font-size: 20px;
+}
 }
