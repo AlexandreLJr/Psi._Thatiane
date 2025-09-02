@@ -411,3 +411,48 @@ columns: 2;         /* divide em 2 colunas */
 column-gap: 90px;   /* espaço entre colunas */
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
+body {
+margin: 0;
+padding: 0;
+}
+
+.flex{
+flex-direction: column;
+}
+
+.menu-desktop{
+display: none !important;
+}
+
+.menu-mobile {
+display: none; /* Só aparece quando ativado */
+}
+
+.menu-mobile.active {
+display: block !important; /* ou flex, dependendo do layout */
+}
+
+.menu-mobile ul li a {
+font-size: 21px;
+}
+
+.logo-img {
+margin-left: 260px; /* Espaço à direita */
+margin-top: 15px;
+}
+
+.menu-icon {
+  top: 22px;       /* Distância do topo */
+  left: 20px;      /* Distância da esquerda */
+  font-size: 45px;
+  cursor: pointer;
+  margin: 0;       /* Remove margens que empurram */
+}
+
+.separator {
+width: 90%;
+}
+
+}
