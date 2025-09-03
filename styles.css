@@ -297,6 +297,32 @@ flex-direction: column;
 justify-content: center;
 }
 
+.footer {
+  background-color: #B7D9C3;
+  color: #000000;
+  font-size: 0.9rem;
+  font-family: 'Crimson Text', serif;
+  border-top: 1px solid #ddd;
+  justify-content: center;
+}
+
+.footer a {
+  color: #385B4F;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.footer a:hover {
+  color: #385B4F;
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0.2rem 0;
+}
+
+
 /* Para telas maiores que 768px */
 @media screen and (min-width: 768px) {
 .menu {
@@ -317,6 +343,7 @@ margin-top: -10px; /* ajuste fino */
 .menu-mobile {
 display: none !important;
 }
+
 }
 
 @media screen and (max-width: 767px) { /*DISPOSITIVOS MOBILE*/
@@ -401,6 +428,10 @@ order: 1;
 #atendimento .map-container {
 margin-top:-50px;
 order: 2;
+}
+
+.footer {
+font-size: 0.9rem;
 }
 }
 
@@ -508,5 +539,9 @@ order: 2;
 .btn{
 padding: 32px 120px;  
 font-size: 20px;
+}
+
+.footer {
+font-size: 1.3rem;
 }
 }
